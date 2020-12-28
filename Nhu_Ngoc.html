@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)http://sauham.vutiendung.com/?fbclid=IwAR0ly5yq6Hwe-DT7lwGt0DsmZgrashIRiRZTJR-R9m7J11SQkXxSFagiso4 -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Như Ngọc Cuto</title>
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+        body {
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: 16px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <script src="./NN_files/prefixfree.min.js.download" type="text/javascript"></script>
+
+    <div align="center" style="direction: ltr;">        
+        <div class="wrap">
+            <div class="cube">
+                <div class="front">
+                    <img src="./NN_files/1.jpg">
+                </div>
+                <div class="back">
+                    <img src="./NN_files/2.jpg">
+                </div>
+                <div class="top">
+                    <img src="./NN_files/3.jpg">
+                </div>
+                <div class="bottom">
+                    <img src="./NN_files/6.jpg">
+                </div>
+                <div class="left">
+                    <img src="./NN_files/7.jpg">
+                </div>
+                <div class="right">
+                    <img src="./NN_files/8.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center;padding-top:150px;">
+            Bấm vào mặt Bé Ngọc ngáo để ngâm cứu!
+        </div>
+
+        <style>
+			img {width:100%}
+            body {
+                background-color: #eee;
+            }
+
+            .wrap {
+                margin-top: 150px;
+                perspective: 1000px;
+                perspective-origin: 50% 50%;
+                background-image: linear-gradient(135deg,#ccc 25%,#ddd 25%,#ddd 50%, #ccc 50%, #ccc 75%,#ddd 75%,#ddd 100%);
+                background-size: 80px 80px;
+                border-top: solid 3px #999;
+                border-bottom: solid 3px #999;
+                /* Background stripes animation */
+                animation: bganim 3s linear 2s infinite;
+            }
+
+            @keyframes bganim {
+                from {
+                    background-position: 0px;
+                }
+
+                to {
+                    background-position: 80px;
+                }
+            }
+
+            .cube {
+                margin: auto;
+                position: relative;
+                height: 400px;
+                width: 400px;
+                transform-style: preserve-3d;
+            }
+
+                .cube div {
+                    position: absolute;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0.9;
+                    background-color: #000;
+                    border: solid 1px #eee;
+                    color: #fff;
+                    font: 10px arial;
+                    transition: transform 0.2s ease-in;
+                }
+
+            .front {
+                transform: translateZ(200px);
+            }
+
+            .back {
+                transform: translateZ(-200px) rotateY(180deg);
+            }
+
+            .right {
+                transform: rotateY(-270deg) translateX(200px);
+                transform-origin: top right;
+            }
+
+            .left {
+                transform: rotateY(270deg) translateX(-200px);
+                transform-origin: center left;
+            }
+
+            .top {
+                transform: rotateX(-270deg) translateY(-200px);
+                transform-origin: top center;
+            }
+
+            .bottom {
+                transform: rotateX(270deg) translateY(200px);
+                transform-origin: bottom center;
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotateX(0deg) rotateY(0deg);
+                }
+
+                to {
+                    transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+
+            .cube {
+                animation: rotate 20s infinite linear;
+            }
+
+            .wrap:hover .front {
+                transform: translateZ(200px);
+            }
+
+            .wrap:hover .back {
+                transform: translateZ(-200px) rotateY(180deg);
+            }
+
+            .wrap:hover .right {
+                transform: rotateY(-270deg) translateZ(100px) translateX(200px);
+            }
+
+            .wrap:hover .left {
+                transform: rotateY(270deg) translateZ(200px) translateX(-200px);
+            }
+
+            .wrap:hover .top {
+                transform: rotateX(-270deg) translateZ(200px) translateY(-200px);
+            }
+
+            .wrap:hover .bottom {
+                transform: rotateX(270deg) translateZ(200px) translateY(200px);
+            }
+        </style>
+    </div>
+
+</body></html>
