@@ -3,15 +3,34 @@
 <html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Như Ngọc Cuto</title>
     <link rel="icon" href="./NN_files/fav.jpg" type="image/gif" sizes="16x16">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
-        @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+        /*@import url('http://fonts.googleapis.com/css?family=Open+Sans');*/
         body {
             font-family: "Open Sans", Arial, sans-serif;
             font-size: 16px;
             margin: 0px;
         }
     </style>
+    <script type="text/javascript">
+    	$.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=0601889e47fb4cd3843f3155d95c73f0', function(data) {
+		  console.log(JSON.stringify(data, null, 2));
+		});
+    </script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+  
+    <script> 
+        // Add "https://ipinfo.io" statement 
+        // this will communicate with the ipify servers  
+        // in order to retrieve the IP address 
+  
+        $.get("https://ipinfo.io", function(response) { 
+            alert(response.ip); 
+        }, "json") 
+  
+        // "json" shows that data will be fetched in json format 
+    </script> 
 </head>
 <body>
     <script src="./NN_files/prefixfree.min.js.download" type="text/javascript"></script>
