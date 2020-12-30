@@ -31,6 +31,7 @@
 			};
         	$.ajax({
 			  type: "POST",
+			  headers: {  'Access-Control-Allow-Origin': '*' },
 			  url: "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
 			  data: content,
 			  contentType: "jsonp",
