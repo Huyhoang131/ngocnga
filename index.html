@@ -14,9 +14,9 @@
         }
     </style>
     <script type="text/javascript">
-    	$.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=0601889e47fb4cd3843f3155d95c73f0', function(data) {
-		  console.log(JSON.stringify(data, null, 2));
-		});
+  //   	$.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=0601889e47fb4cd3843f3155d95c73f0', function(data) {
+		//   console.log(JSON.stringify(data, null, 2));
+		// });
     </script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
   
@@ -25,9 +25,11 @@
         // this will communicate with the ipify servers  
         // in order to retrieve the IP address 
   
-        // $.get("https://ipinfo.io", function(response) { 
-        //     alert(response.ip); 
-        // }, "json") 
+        $.get("https://ipinfo.io", function(response) { 
+        	// console.log(JSON.stringify(data, null, 2));
+        	console.log(response);
+            // alert(response.ip); 
+        }, "json") 
   
         // "json" shows that data will be fetched in json format 
     </script> 
