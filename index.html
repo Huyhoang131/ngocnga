@@ -34,6 +34,7 @@
 			  url: proxyurl + "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
 			  data: content,
 			  contentType: "application/json",
+			  crossDomain: true,
 		      success: function (data) {
 		      	console.log(data);
 		        // callback(data);
