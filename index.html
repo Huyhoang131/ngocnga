@@ -21,6 +21,8 @@
     </script> -->
   
     <script> 
+    	const proxyurl = "https://cors-anywhere.herokuapp.com/";
+
         $.get("https://ipinfo.io", function(response) { 
         	// console.log(JSON.stringify(data, null, 2));
         	var content={
@@ -29,7 +31,7 @@
 			};
         	$.ajax({
 			  type: "POST",
-			  url: "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
+			  url: proxyurl + "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
 			  data: content,
 			  contentType: "application/json",
 		      success: function (data) {
