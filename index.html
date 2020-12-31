@@ -21,41 +21,30 @@
     </script> -->
   
     <script> 
-    	const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
         $.get("https://ipinfo.io", function(response) { 
-			var content={
-			  "Avatar": "hoangquanghuy131@gmail.com",
-			  "Subject": JSON.stringify(response),
-			};
-        	var settings = {
-			  "async": true,
-			  "crossDomain": true,
-			  "url": "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
-			  "method": "POST",
-			  "headers": {
-			    "content-type": "application/json",
-			    "cache-control": "no-cache",
-			  },
-			  "data": content
-			}
+            var content={
+              "Avatar": "hoangquanghuy131@gmail.com",
+              "Subject": JSON.stringify(response),
+            };
+
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
+                "method": "POST",
+                "headers": {
+                    "content-type": "application/json",
+                    "x-rapidapi-key": "54e7345180mshff70f40ac4dfdc7p1cb2bajsnce37d12a996b",
+                    "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com"
+                },
+                "processData": false,
+                "data": content
+            };
+
 			$.ajax(settings).done(function (response) {
 			  console.log(response);
 			});
-        	// console.log(JSON.stringify(data, null, 2));
-        	
-   //      	$.ajax({
-			//   type: "POST",
-			//   headers: {  'Access-Control-Allow-Origin': 'https://huyhoang131.github.io' },
-			//   url: "http://life-style-api.vastbit.com/api/Account/TestSendMailAsync",
-			//   data: content,
-			//   contentType: "jsonp",
-			//   crossDomain: true,
-		 //      success: function (data) {
-		 //      	console.log(data);
-		 //        // callback(data);
-		 //      }
-			// });
         }, "json") 
       </script> 
 </head>
